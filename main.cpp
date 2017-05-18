@@ -12,7 +12,7 @@ string makeLower(string text) {
     return text;
 }
 
-//istenilen dosyaya istenilen deger uzerine eklenerek yazilir
+//istenilen dosyaya istenilen deger, dosya uzerine eklenerek yazilir
 void writeToFile(string path , string *val) {
     ofstream myfile;
     myfile.open (path.c_str() , ios_base::app);
@@ -40,7 +40,7 @@ int main() {
     if(fileName != "file.dat" || searchVal.length() == 0 || (searchType != "dosya" && searchType != "sessiz" && searchType != "ekran" ) ) {
         cout<<"Parametre hatasi olustu. Lutfen kullanim kilavuzunu okuyun ve parametreleri eksiksiz ve dogru bir sekilde giriniz!";
     } else {
-        // eger herhangi bir eksik yoksa asagidsaki islemler yapilir
+        // eger herhangi bir eksik yoksa asagidaki islemler yapilir
 
         //Dat dosyasi okunur
         ifstream infile;
@@ -67,7 +67,7 @@ int main() {
             if(searchType == "dosya") {
                 cout<<"Sonuclar result.txt dosyasina yazildi";
             }
-        } else {// bulunmadiysa
+        } else {// bulunamadiysa
             cout<<"Sonuc bulunamadi";
         }
     }
