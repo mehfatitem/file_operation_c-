@@ -71,6 +71,6 @@ int main() {
             cout<<"Sonuc bulunamadi";
         }
     }
-	system("PAUSE");
+    system("PAUSE");
     return 0;
 }
